@@ -4,38 +4,46 @@
   // background: #11134d;
 
   .text-s {
-    // font-size: min(max(16px, 1vw), 22px);
-    font-size: 42px;
+    font-size: min(max(34px, 4vw), 50px);
     font-weight: 600;
+    text-transform: none;
   }
   .c-fonts {
-    font-size: min(max(18px, 2vw), 24px);
-    // font-size: 19px;
-    // line-height: 26px;
-    // @media (max-width: 999px) {
-    //   font-size: 16px;
-    // }
+    font-size: min(max(16px, 4vw), 25px);
   }
-
+  
+  .main-banner{
+    width: 100%;
+    border: var(--primary-color) solid 2px;
+    top: 15px;
+  }
+  .custom-mobile-height {
+    background-image: url(../../../../../assets/images/landingpage/hm-page.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: calc(40vh - 48px);
+  }
   .custom-height {
     background-image: url(../../../../../assets/images/landingpage/hm-page.png);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover !important;
     background-position: center;
-    height: 135vh;
+    height: 130vh;
     // background-position: center;
     // min-height: 400px;
 
     .banner-text {
-      // display: none;
-      max-width: 600px;
+      max-width: 690px;
       width: 100%;
+      text-align: center;
+      align-content: center;
       background-color: #0b0d0ed4;
-      color: #000000;
       border-radius: 5px;
-      padding: 40px;
-      height: 300px;
+      padding: 20px;
+      height: 240px;
     }
 
     @media (max-width: 600px) {

@@ -1,6 +1,6 @@
 <div class="main-container">
   <nav class="navbar navbar-light px-6 px-sm-10 auth-btns">
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column cursor" routerLink="/">
       <img
         src="/assets/images/landingpage/ukrainianwife.png"
         class="h-60-px pt-2"
@@ -12,14 +12,12 @@
     </div>
     <div class="landing-btn d-none d-md-block d-lg-block">
       <button
-        *ngIf="!isLogin"
         class="btn cmn-btn third w-80-px rounded-5"
         (click)="openLoginPage()"
       >
         Login
       </button>
       <button
-        *ngIf="isLogin"
         class="btn btn-outline alt third w-80-px ms-2 rounded-5"
         (click)="openSignPage()"
       >
@@ -28,34 +26,30 @@
     </div>
   </nav>
 
-  <div class="custom-height" (click)="closeMenu()">
-    <div class="py-10">
+  <div class="custom-mobile-height" *ngIf="isInnerWidthSmall && (isLogin || isRegister)" (click)="closeMenu()"></div>
+  <div (click)="closeMenu()">
+    <div class="py-sm-10" [ngClass]="!isInnerWidthSmall || (!isLogin && !isRegister) ? 'custom-height' : ''">
+      <div class="container position-relative top-50" *ngIf="!isLogin && !isRegister">
+        <div class="col-md-6 banner-text">
+          <span class="text-left">
+            <h1 class="text-white text-s">UkrainianWife.tube</h1>
+          </span>
+          <span class="text-white c-fonts text-start mt-4">
+            Meet and Talk Face to Face with Beautiful Ukrainian Girls!
+          </span>
+          <span class="text-white c-fonts text-start mt-4">
+            Talk them out of their clothes talk them into marriage!
+          </span>
+        </div>
+      </div>
       <ng-container *ngIf="isLogin">
         <app-login></app-login>
       </ng-container>
-      <ng-container *ngIf="!isLogin">
+      <ng-container *ngIf="isRegister">
         <app-sign-up></app-sign-up>
       </ng-container>
-      <div class="container">
-        <div class="col-md-6">
-          <span class="text-left mt-3">
-            <h1 class="text-dark text-s">UkrainianWife.tube</h1>
-          </span>
-          <!-- <span class="pb-4">
-          <i class="text-white text-s">No AI and we DO NOT sell your data</i>
-        </span> -->
-          <span class="text-dark c-fonts text-start mt-4">
-            Meet and Talk Face to Face with Beautiful Ukrainian Girls!
-          </span>
-          <span class="text-dark c-fonts text-start mt-4">
-            Talk them out of their clothes talk them into marriage!
-          </span>
-          <!-- <span class="text-white c-fonts py-6 mt-10 text-center"
-          >Social Discussion on how to heal various ailments</span
-        > -->
-        </div>
-      </div>
     </div>
+    <div class="h-200-px"  *ngIf="!isInnerWidthSmall"></div>
   </div>
 </div>
 <ng-container *ngIf="mobileMenuToggle">

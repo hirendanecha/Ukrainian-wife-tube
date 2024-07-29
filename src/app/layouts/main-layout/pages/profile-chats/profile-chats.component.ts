@@ -154,7 +154,7 @@ export class ProfileChartsComponent implements OnInit, OnDestroy {
     modalRef.componentInstance.confirmButtonLabel = 'Yes';
     modalRef.componentInstance.cancelButtonLabel = 'No';
     modalRef.componentInstance.message =
-      'Would you like to add a ukrainianwife.tube icon to your mobile Home screen?';
+      'Would you like to add a ukrainewife.tube icon to your mobile Home screen?';
     modalRef.result.then((res) => {
       localStorage.setItem('isMobilePopShow', 'N');
       if (res === 'success') {

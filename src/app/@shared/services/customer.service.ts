@@ -150,12 +150,12 @@ export class CustomerService {
     return this.http.post(`${this.baseUrl}/get-meta`, url);
   }
   startCallToBuzzRing(callerData: Object): Observable<any>{
-    const url = 'https://ring-dev-api.ukrainianwife.tube/api/customers/call-notification';
+    const url = 'https://ring-dev-api.ukrainewife.tube/api/customers/call-notification';
     return this.http.post(url, callerData);
   }
   
   startGroupCallToBuzzRing(callerData: Object): Observable<any>{
-    const url = 'https://ring-api.ukrainianwife.tube/api/v1/customers/group-call-notification';
+    const url = 'https://ring-api.ukrainewife.tube/api/v1/customers/group-call-notification';
     return this.http.post(url, callerData);
   }
 }

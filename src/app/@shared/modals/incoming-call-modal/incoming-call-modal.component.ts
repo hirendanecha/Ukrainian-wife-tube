@@ -138,7 +138,7 @@ export class IncomingcallModalComponent
       notificationByProfileId: this.profileId,
       notificationDesc: 'decline call...',
       notificationToProfileId: this.calldata.notificationToProfileId,
-      domain: 'ukrainianwife.tube',
+      domain: 'ukrainewife.tube',
     };
     this.customerService.startCallToBuzzRing(buzzRingData).subscribe({
       // next: (data: any) => {},

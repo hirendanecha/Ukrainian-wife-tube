@@ -88,9 +88,9 @@ export function app(): express.Express {
           description:
             'Meet and Talk Face to Face with Beautiful Ukrainian Girls!',
           image:
-            'https://www.ukrainianwife.tube/assets/images/landingpage/default-banner.png',
-          site: 'https://www.ukrainianwife.tube/',
-          url: 'https://www.ukrainianwife.tube' + params,
+            'https://www.ukrainewife.tube/assets/images/landingpage/default-banner.png',
+          site: 'https://www.ukrainewife.tube/',
+          url: 'https://www.ukrainewife.tube' + params,
           keywords: 'UkrainianWife.tube',
         };
         if (
@@ -160,7 +160,7 @@ export function app(): express.Express {
               post?.thumbfilename ||
               post?.metaimage ||
               post?.imageUrl ||
-              'https://www.ukrainianwife.tube/assets/images/landingpage/default-banner.png',
+              'https://www.ukrainewife.tube/assets/images/landingpage/default-banner.png',
           };
           seo.title = talent.name;
           seo.description = strip_html_tags(talent.description);

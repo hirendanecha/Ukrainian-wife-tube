@@ -1020,7 +1020,7 @@ export class ProfileChatsListComponent
           this.groupData?.groupName ||
           this.sharedService?.userData?.userName + ' incoming call...',
         notificationToProfileId: this.userChat.profileId,
-        domain: 'ukrainianwife.tube',
+        domain: 'ukrainewife.tube',
         uuId: uuId,
       };
       this.customerService.startCallToBuzzRing(buzzRingData).subscribe({
@@ -1048,7 +1048,7 @@ export class ProfileChatsListComponent
           this.groupData?.groupName ||
           this.sharedService?.userData?.userName + ' incoming call...',
         notificationToProfileIds: groupMembers,
-        domain: 'ukrainianwife.tube',
+        domain: 'ukrainewife.tube',
         uuId: uuId,
       };
       this.customerService
@@ -1078,7 +1078,7 @@ export class ProfileChatsListComponent
               this.groupData?.groupName ||
               this?.userChat.userName + 'incoming call...',
             notificationToProfileId: this.userChat.profileId,
-            domain: 'ukrainianwife.tube',
+            domain: 'ukrainewife.tube',
             uuId: uuId,
           };
           this.customerService.startCallToBuzzRing(buzzRingData).subscribe({

@@ -30,7 +30,7 @@ export class ConferenceLinkComponent {
   myProp: string;
   hasDisplayedError = false;
   profileId: number;
-  originUrl = 'https://ukrainianwife.tube/dating-call/'
+  originUrl = 'https://ukrainewife.tube/dating-call/'
   link: string = '';
   constructor(
     private spinner: NgxSpinnerService,
